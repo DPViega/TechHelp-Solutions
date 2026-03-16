@@ -34,3 +34,10 @@ Mantenha o padrão de registro para cada nova atualização.
 - **Subtítulo Estratégico**: Adição do subtítulo **"GESTÃO DE TICKETS"** formatado propositalmente com caixa alta e um largo espaçamento entre caracteres (`tracking-widest`), alinhado verticalmente junto à barra separadora de design. Tudo centralizado no `<header>` do arquivo `Index.tsx`.
 
 ---
+
+## 📅 [16/03/2026] - 🕒 02:44 - 🚀 Correção de Deploy na Vercel
+
+**Descrição/Atualizações:**
+- **Resolução de Conflitos**: Remoção dos arquivos de lock do Bun (`bun.lock` e `bun.lockb`) do repositório para evitar conflito de múltiplos gerenciadores de pacotes (Bun vs. NPM) nos servidores da Vercel.
+- **Configuração de Ambiente de Produção**: Atualização do `package.json` com a exigência via propriedade `"engines": { "node": ">=20.0.0" }`, orientando a hospedagem da Vercel a subir um container compatível com as versões mais modernas de dependências (como '@types/node', Vite).
+- **Deploy Automático**: Push das retificações garantindo o deploy da aplicação em tempo real.
